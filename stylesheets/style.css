@@ -1,5 +1,5 @@
 * {
-  overflow-x: hidden;
+  overflow-x:hidden;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,12 +11,22 @@ body {
 }
 
 nav {
-  display: flex;
+  z-index: 1;
+
+  overflow-y: hidden;
+
+  width: 100%;
 }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
+
+  height: 6px;
+  margin-top: 55px;
+  padding-bottom: 70px;
+
+  background-color: #000000;
 
   align-items: center;
   justify-content: center;
@@ -25,10 +35,11 @@ ul {
 ul img {
   width: 41px;
   height: 21px;
+  padding-top: 73px;
 }
 
 nav ul li {
-  padding: 0 30px 0;
+  padding: 73px 30px 0;
 }
 
 nav ul li a, a:visited {
@@ -54,30 +65,64 @@ nav ul li a, a:visited {
   justify-content: center;
 }
 
-.main-picture img:first-of-type {
+.main-picture_one {
   position: absolute;
-  z-index: 1;
-  top: -100px;
-  right: -100px;
-  bottom: -100px;
-  left: -100px;
+  z-index: -3;
+  top: -175px;
+  right: 0;
+  bottom: 0;
+  left: -170px;
 
   width: 120%;
 }
 
-.main-picture img:nth-of-type(2) {
-  position: relative;
-  z-index: 2;
-  top: 0;
+.main-picture_two {
+  position: absolute;
+  z-index: -2;
+  top: 50px;
   right: 0;
   bottom: 0;
-  left: 350px;
+  left: 0;
 
-  width: 150%;
+  width: 100%;
+
+  background: radial-gradient(900.00px at 50% 50%, #2B7065 0%, #036857 0.01%, rgba(0, 0, 0, 0.58) 100%);
+  background-size: 200%;
 }
 
-.main-picture img:nth-of-type(3) {
-  z-index: 3;
+.main-picture_three {
+  z-index: -1;
 
   width: 80%;
+}
+
+footer ul {
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+
+  height: 6px;
+  margin-top: 55px;
+  padding-bottom: 70px;
+
+  background-color: #000000;
+
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  padding: 73px 165px 0;
+}
+
+footer ul li a, a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  font-family: 'Rubik';
+  font-size: 20pt;
+  font-weight: Medium;
 }
