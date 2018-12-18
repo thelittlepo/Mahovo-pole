@@ -8,9 +8,9 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="menu">
-          <a href="#" class="menu-first">Программа</a>
+      <nav class="menu">
+        <div class="menu-list">
+          <a href="#s1" class="menu-first">Программа</a>
           <a href="#" class="menu-second">Билеты</a>
           <a href="#" class="menu-third">Фестиваль</a>
         </div>
@@ -18,9 +18,14 @@
     </header>
     <section class="main">
       <div class="main-picture">
-        <img src="images/SVG/round.svg" class="main-picture_one" alt="background">
+        <div class="main-picture__spiral">
+          <img src="images/SVG/round.svg" class="main-picture__one" alt="round">
+        </div>
       </div>
-      <div class="dates">
+      <div class="main-background">
+        <img src="images/SVG/background.svg" alt="background">
+      </div>
+      <div class="dates" id="s1">
         <div class="griditem-one">
           <h2>28</h2>
            <h3>ЯНВ.</h3>
@@ -59,8 +64,8 @@
         </div>
       </div>
       <div class="address">
-        <p>mahovopole@gmail.com <br>
-           улица Варварка домовладение 6, стр. 1, Москва, 109012</p>
+        <a href="mahovopole@gmail.com">mahovopole@gmail.com</a>
+        <a href="https://goo.gl/maps/12y2g6KuVin">улица Варварка домовладение 6, строение 1, Москва, 109012</a>
       </div>
     </section>
     <footer>
@@ -79,5 +84,7 @@
         </li>
       </ul>
     </footer>
+    <script src="javascripts/jquery-3.1.1.js" charset="utf-8"></script>
+    <script src="javascripts/menu.js" charset="utf-8"></script>
   </body>
 </html>

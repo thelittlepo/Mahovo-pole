@@ -66,18 +66,21 @@ nav {
 }
 
 .dates {
-  display: flex;
+  display: grid;
   overflow-y: hidden;
-  flex-direction: column;
 
-  width: 262px;
-  height: 190px;
+  width: 100%;
   margin-top: 13px;
   margin-bottom: 24px;
-  margin-left: 30px;
 
+  grid-template-columns: 30vw 30vw;
+  grid-template-rows: 20vw 20vw 20vw;
+  grid-row-gap: 1vw;
+  grid-column-gap: 3vw;
   justify-content: center;
-  flex-flow: wrap;
+  justify-items: start;
+  align-items: start;
+
 }
 
 .griditem-two,
@@ -85,7 +88,7 @@ nav {
 .griditem-six {
   overflow-y: hidden;
 
-  margin-left: 48px;
+
 }
 
 .dates h2 {
@@ -219,11 +222,16 @@ footer ul li a, a:visited {
  }
 
  .dates {
-   width: 558px;
-   height: 181px;
    margin-top: 30px;
    margin-bottom: 30px;
-   margin-left: 66px;
+
+   grid-template-columns: 25vw 25vw 25vw;
+   grid-template-rows: 20vw 20vw;
+   grid-row-gap: 1vw;
+   grid-column-gap: 4vw;
+   justify-content: center;
+   justify-items: start;
+   align-items: start;
  }
 
  .dates h2 {
