@@ -1,439 +1,246 @@
 * {
-  overflow-x:hidden;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  overflow-x: hidden;
-
   background: #000000;
   background: radial-gradient(398.50px at 50% 50%, #2B7065 0%, #036857 0.01%, #000000 100%);
 }
 
+html {
+  font-size: 11px;
+}
+
 nav {
   display: flex;
-  overflow-y: hidden;
-  flex-direction: row;
 
-  width: 100%;
-  height: 21px;
-  margin-top: 16px;
-  padding-bottom: 12px;
+  height: 8vw;
+  margin-top: 5vw;
 
-  background-color: #000000;
+  color: #000000;
 
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .menu {
   display: flex;
-  overflow-y: hidden;
-  flex-direction: row;
 
-  align-items: center;
+  text-transform: uppercase;
+
+  font-family: 'Rubik-medium';
+  font-size: 1rem;
+
   justify-content: center;
-}
-
-.menu a {
-  overflow-y: hidden;
-
-  padding: 12px 10px 0;
+  align-items: center;
 }
 
 .menu a, a:visited {
-  overflow-y: hidden;
+  padding: 0 5vw 0;
 
   text-decoration: none;
-  text-transform: uppercase;
 
-  color: #FFFFFF;
-
-  font-family: 'Rubik-Medium';
-  font-size: 8pt;
-  font-weight: 400;
+  color: #ffff;
 }
 
-.main-picture_one{
-  overflow-y: hidden;
+.main-picture {
+  overflow: hidden;
 
-  width: 75%;
-  margin-top: 13px;
-  margin-right: 41px;
-  margin-left: 41px;
+  -webkit-animation: spin 3s linear 0s infinite reverse;
+  -moz-animation: spin 3s linear 0s infinite reverse;
+  -ms-animation: spin 3s linear 0s infinite reverse;
+  -o-animation: spin 3s linear 0s infinite reverse;
+  animation: spin 3s linear 0s infinite reverse;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.main-picture img:hover {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.main-picture__spiral img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+  margin-top: 8.75vw;
+  margin-right: 16.875vw;
+  margin-left: 16.875vw;
+
+  -webkit-animation: spin 6s linear 0s infinite normal;
+  -moz-animation: spin 6s linear 0s infinite normal;
+  -ms-animation: spin 6s linear 0s infinite normal;
+  -o-animation: spin 6s linear 0s infinite normal;
+  animation: spin 6s linear 0s infinite normal;
+}
+
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(360deg); }
+  100% { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(360deg); }
+  100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(360deg); }
+  100% { -o-transform: rotate(0deg); }
 }
 
 .dates {
   display: grid;
-  overflow-y: hidden;
 
-  width: 100%;
-  margin-top: 13px;
-  margin-bottom: 24px;
+  margin: 7.5vw 12.5vw 0;
 
-  grid-template-columns: 30vw 30vw;
-  grid-template-rows: 20vw 20vw 20vw;
-  grid-row-gap: 1vw;
-  grid-column-gap: 3vw;
-  justify-content: center;
-  justify-items: start;
-  align-items: start;
-
+  grid-template-columns: 30fr 30fr;
+  grid-template-rows:  20fr 20fr 20fr;
+  grid-row-gap: 7.1875vw;
+  grid-column-gap: 9.3125vw;
 }
 
-.griditem-two,
-.griditem-four,
-.griditem-six {
-  overflow-y: hidden;
+.griditem{
+  display: flex;
+  flex-direction: row;
 
+  flex-wrap: nowrap;
+}
 
+.parttwo {
+  display: flex;
+
+  margin-top: 0.625vw;
+  margin-left: 2.8125vw;
+
+  flex-wrap: wrap;
 }
 
 .dates h2 {
-  overflow-y: hidden;
-
-  color: #FFFFFF;
+  color: #ffff;
 
   font-family: 'Rubik-Bold';
-  font-size: 24px;
+  font-size: 2.9rem;
 }
 
 .dates h3 {
-  overflow-y: hidden;
+  padding-top: 2.5vw;
 
-  margin-top: 7px;
-
-  color: #FFFFFF;
+  color: #ffff;
 
   font-family: 'Rubik-Light';
-  font-size: 18px;
+  font-size: 1.81rem;
 }
 
-.dates p.name {
-  overflow-y: hidden;
-
-  width: 50px;
-  margin-top: -47px;
-  margin-left: 44px;
-
-  color: #FFFFFF;
+p.name {
+  color: #ffff;
 
   font-family: 'Rubik-Medium';
-  font-size: 12px;
+  font-size: 1.18rem;
 }
 
-.dates p.date {
-  overflow-y: hidden;
+p.date {
+  padding-top: 3.75vw;
 
-  margin-top: 11px;
-  margin-left: 44px;
-
-  color: #FFFFFF;
+  color: #ffff;
 
   font-family: 'Rubik-Light';
-  font-size: 10px;
+  font-size: 1.18rem;
 }
 
 .address {
-  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 
-  width: 215px;
-  margin-bottom: 13px;
-  margin-left: 52px;
-
-  text-align: center;
-
-  color: #FFFFFF;
+  margin-top: 8.4375vw;
+  padding: 0 12.5vw 0;
 
   font-family: 'Rubik-Light';
-  font-size: 10pt;
-}
-
-footer ul {
-  display: flex;
-  overflow-y: hidden;
-  flex-direction: row;
-
-  height: 21px;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-
-  background-color: #000000;
+  font-size: 1rem;
 
   justify-content: center;
   align-items: center;
 }
 
-footer ul li {
-  overflow-y: hidden;
+.address a, a:hover {
+  text-align: center;
+  text-decoration: underline;
 
-  padding: 12px 10px 0;
+  color: #ffff;
 }
 
-footer ul li a, a:visited {
-  overflow-y: hidden;
+.tickets {
+  display: flex;
+  flex-direction: column;
 
-  text-decoration: none;
-  text-transform: uppercase;
+  margin-top: 12.5vw;
+  padding: 0 12.5vw 0;
+}
 
-  color: #FFFFFF;
+.ticket {
+  height: 25vw;
+  padding-top: 10vw;
+}
+
+.info {
+  margin-top: 4.0625vw;
+}
+
+.ticket h3 {
+  width: 55.625vw;
+
+  color: #ffff;
 
   font-family: 'Rubik-Medium';
-  font-size: 8pt;
-  font-weight: 400;
+  font-size: 1.81rem;
+  line-height: 1;
 }
 
-@media (min-width: 768px) {
- nav {
-   height: 35px;
-   margin-top: 36px;
-   padding-bottom: 26px;
- }
+.ticket p {
+  color: #ffff;
 
- .menu a {
-   padding: 25px 35px 0;
- }
-
- .menu a, a:visited {
-   font-size: 14pt;
- }
-
- .main-picture_one{
-   width: 90%;
-   margin-top: 26px;
-   margin-right: 41px;
-   margin-left: 38px;
- }
-
- footer ul {
-   height: 35px;
-   margin-bottom: 36px;
-   padding-bottom: 26px;
- }
-
- footer ul li {
-   padding: 25px 35px 0;
- }
-
- footer ul li a, a:visited  {
-   font-size: 14pt;
- }
-
- .dates {
-   margin-top: 30px;
-   margin-bottom: 30px;
-
-   grid-template-columns: 25vw 25vw 25vw;
-   grid-template-rows: 20vw 20vw;
-   grid-row-gap: 1vw;
-   grid-column-gap: 4vw;
-   justify-content: center;
-   justify-items: start;
-   align-items: start;
- }
-
- .dates h2 {
-   font-size: 36pt;
- }
-
- .dates h3 {
-   text-transform: uppercase;
-
-   font-size: 18pt;
- }
-
- .dates p.name {
-   width: 80px;
-   margin-top: -73px;
-   margin-left: 68px;
-
-   font-size: 14pt;
- }
-
- .dates p.date {
-   margin-top: 20px;
-   margin-left: 68px;
-
-   font-size: 12pt;
- }
-
- .address {
-   width: 296px;
-   margin-bottom: 26px;
-   margin-left: 52px;
-
-   text-align: center;
-
-   color: #FFFFFF;
-
-   font-family: 'Rubik-Light';
-   font-size: 10pt;
- }
-}
-@media (min-width: 1024px) {
- nav {
-   height: 35px;
-   margin-top: 36px;
-   padding-bottom: 26px;
- }
-
- .menu a {
-   padding: 25px 35px 0;
- }
-
- .menu a, a:visited {
-   font-size: 14pt;
- }
-
- .main-picture_one{
-   width: 90%;
-   margin-top: 26px;
-   margin-right: 41px;
-   margin-left: 38px;
- }
-
- footer ul {
-   height: 35px;
-   margin-bottom: 36px;
-   padding-bottom: 26px;
- }
-
- footer ul li {
-   padding: 25px 35px 0;
- }
-
- footer ul li a, a:visited  {
-   font-size: 14pt;
- }
-
- .dates {
-   width: 558px;
-   height: 181px;
-   margin-top: 30px;
-   margin-bottom: 30px;
-   margin-left: 66px;
- }
-
- .dates h2 {
-   font-size: 36pt;
- }
-
- .dates h3 {
-   text-transform: uppercase;
-
-   font-size: 18pt;
- }
-
- .dates p.name {
-   width: 80px;
-   margin-top: -73px;
-   margin-left: 68px;
-
-   font-size: 14pt;
- }
-
- .dates p.date {
-   margin-top: 20px;
-   margin-left: 68px;
-
-   font-size: 12pt;
- }
-
- .address {
-   width: 296px;
-   margin-bottom: 26px;
-   margin-left: 52px;
-
-   text-align: center;
-
-   color: #FFFFFF;
-
-   font-family: 'Rubik-Light';
-   font-size: 10pt;
- }
+  font-family: 'Rubik-Light';
+  font-size: 1.18rem;
+  line-height: 1.5;
 }
 
-@media (min-width: 1440px) {
- nav {
-   height: 35px;
-   margin-top: 36px;
-   padding-bottom: 26px;
- }
+.tickets-button a, a:visited {
+  width: 24.0625vw;
+  height: 10vw;
 
- .menu a {
-   padding: 25px 35px 0;
- }
+  text-decoration: none;
 
- .menu a, a:visited {
-   font-size: 14pt;
- }
+  border-radius: 1.5625vw;
+  background-color: #069E79;
 
- .main-picture_one{
-   width: 90%;
-   margin-top: 26px;
-   margin-right: 41px;
-   margin-left: 38px;
- }
+  font-family: 'Rubik-Medium';
+  font-size: 1.72rem;
+}
 
- footer ul {
-   height: 35px;
-   margin-bottom: 36px;
-   padding-bottom: 26px;
- }
+.tickets-addition {
+  padding-top: 4.0625vw;
+}
 
- footer ul li {
-   padding: 25px 35px 0;
- }
+.tickets-addition p {
+  padding-top: -1.875vw;
 
- footer ul li a, a:visited  {
-   font-size: 14pt;
- }
+  color: #E5E5E5;
 
- .dates {
-   width: 558px;
-   height: 181px;
-   margin-top: 30px;
-   margin-bottom: 30px;
-   margin-left: 66px;
- }
-
- .dates h2 {
-   font-size: 36pt;
- }
-
- .dates h3 {
-   text-transform: uppercase;
-
-   font-size: 18pt;
- }
-
- .dates p.name {
-   width: 80px;
-   margin-top: -73px;
-   margin-left: 68px;
-
-   font-size: 14pt;
- }
-
- .dates p.date {
-   margin-top: 20px;
-   margin-left: 68px;
-
-   font-size: 12pt;
- }
-
- .address {
-   width: 296px;
-   margin-bottom: 26px;
-   margin-left: 52px;
-
-   text-align: center;
-
-   color: #FFFFFF;
-
-   font-family: 'Rubik-Light';
-   font-size: 10pt;
- }
+  font-family: 'Rubik-Light';
+  font-size: 1rem;
 }
