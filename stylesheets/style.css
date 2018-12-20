@@ -5,17 +5,16 @@
 
 body {
   background: #000000;
-  background: radial-gradient(398.50px at 50% 50%, #2B7065 0%, #036857 0.01%, #000000 100%);
 }
 
 html {
-  font-size: 11px;
+  font-size: 3.45vw;
 }
 
 nav {
   display: flex;
 
-  height: 8vw;
+  height: 10vw;
   margin-top: 5vw;
 
   color: #000000;
@@ -25,9 +24,15 @@ nav {
 }
 
 .menu {
+  position: fixed;
+
   display: flex;
 
+  height: 10vw;
+
   text-transform: uppercase;
+
+  color: #000000;
 
   font-family: 'Rubik-medium';
   font-size: 1rem;
@@ -107,12 +112,12 @@ nav {
 .dates {
   display: grid;
 
-  margin: 7.5vw 12.5vw 0;
+  margin: 7.5vw 9.5vw 0;
 
-  grid-template-columns: 30fr 30fr;
+  grid-template-columns: 37fr 37fr;
   grid-template-rows:  20fr 20fr 20fr;
   grid-row-gap: 7.1875vw;
-  grid-column-gap: 9.3125vw;
+  grid-column-gap: 6vw;
 }
 
 .griditem{
@@ -125,7 +130,7 @@ nav {
 .parttwo {
   display: flex;
 
-  margin-top: 0.625vw;
+  margin-top: 0.3vw;
   margin-left: 2.8125vw;
 
   flex-wrap: wrap;
@@ -135,7 +140,7 @@ nav {
   color: #ffff;
 
   font-family: 'Rubik-Bold';
-  font-size: 2.9rem;
+  font-size: 2.45rem;
 }
 
 .dates h3 {
@@ -144,23 +149,25 @@ nav {
   color: #ffff;
 
   font-family: 'Rubik-Light';
-  font-size: 1.81rem;
+  font-size: 1.6rem;
 }
 
 p.name {
   color: #ffff;
 
   font-family: 'Rubik-Medium';
-  font-size: 1.18rem;
+  font-size: 1rem;
 }
 
 p.date {
-  padding-top: 3.75vw;
+  padding-top: 4.6vw;
+
+  letter-spacing: -0.1vw;
 
   color: #ffff;
 
   font-family: 'Rubik-Light';
-  font-size: 1.18rem;
+  font-size: 1.1rem;
 }
 
 .address {
@@ -169,9 +176,6 @@ p.date {
 
   margin-top: 8.4375vw;
   padding: 0 12.5vw 0;
-
-  font-family: 'Rubik-Light';
-  font-size: 1rem;
 
   justify-content: center;
   align-items: center;
@@ -182,6 +186,9 @@ p.date {
   text-decoration: underline;
 
   color: #ffff;
+
+  font-family: 'Rubik-Light';
+  font-size: 1rem;
 }
 
 .tickets {
@@ -189,16 +196,18 @@ p.date {
   flex-direction: column;
 
   margin-top: 12.5vw;
-  padding: 0 12.5vw 0;
+  padding: 0 9.5vw 0;
 }
 
 .ticket {
   height: 25vw;
   padding-top: 10vw;
+  padding-bottom: 5.625vw;
 }
 
 .info {
   margin-top: 4.0625vw;
+  margin-bottom: 10vw;
 }
 
 .ticket h3 {
@@ -208,7 +217,7 @@ p.date {
 
   font-family: 'Rubik-Medium';
   font-size: 1.81rem;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .ticket p {
@@ -216,12 +225,12 @@ p.date {
 
   font-family: 'Rubik-Light';
   font-size: 1.18rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .tickets-button a, a:visited {
-  width: 24.0625vw;
-  height: 10vw;
+  margin-left: 50vw;
+  padding: 2vw 4.156vw;
 
   text-decoration: none;
 
@@ -233,14 +242,104 @@ p.date {
 }
 
 .tickets-addition {
-  padding-top: 4.0625vw;
+  padding-top: 7.5125vw;
 }
 
 .tickets-addition p {
-  padding-top: -1.875vw;
-
   color: #E5E5E5;
 
   font-family: 'Rubik-Light';
   font-size: 1rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  margin: 12.5vw 8.5vw 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  color: #ffff;
+
+  font-family: 'Rubik-Medium';
+  font-size: 2.45rem;
+}
+
+.about h2 {
+  margin-top: 3.125vw;
+
+  text-align: center;
+
+  color: #ffff;
+
+  font-family: 'Rubik-Light';
+  font-size: 2rem;
+}
+
+.about__element h2 {
+  margin-top: 10.9375vw;
+
+  color: #00FFC2;
+
+  font-family: 'Rubik-Medium';
+  font-size: 7.35rem;
+}
+
+.about__element h3 {
+  margin-top: 5.625vw;
+
+  text-align: center;
+
+  color: #ffff;
+
+  font-family: 'Rubik-Medium';
+  font-size: 2rem;
+}
+
+.about__element p {
+  margin-top: 3.75vw;
+
+  text-align: center;
+
+  color: #ffff;
+
+  font-family: 'Rubik-Light';
+  font-size: 1.2rem;
+}
+
+footer{
+  display: flex;
+
+  height: 10vw;
+  margin-top: 8.125vw;
+  margin-bottom: 5vw;
+
+  color: #000000;
+
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+
+  text-transform: uppercase;
+
+  font-family: 'Rubik-medium';
+  font-size: 1rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+ul li a, a:visited {
+  padding: 0 2.3vw 0;
+
+  text-decoration: none;
+
+  color: #ffff;
 }
