@@ -49,7 +49,13 @@ nav {
   color: #ffff;
 }
 
-.main-picture {
+.menu a:hover {
+  text-decoration: none;
+
+  color: #069E79;
+}
+
+.main-picture  {
   overflow: hidden;
 
   -webkit-animation: spin 3s linear 0s infinite reverse;
@@ -62,14 +68,6 @@ nav {
   -ms-animation-play-state: paused;
   -o-animation-play-state: paused;
   animation-play-state: paused;
-}
-
-.main-picture img:hover {
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -ms-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
 }
 
 .main-picture__spiral img {
@@ -86,6 +84,14 @@ nav {
   -ms-animation: spin 6s linear 0s infinite normal;
   -o-animation: spin 6s linear 0s infinite normal;
   animation: spin 6s linear 0s infinite normal;
+}
+
+.main-picture img:hover {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
 }
 
 @keyframes spin {
@@ -342,4 +348,8 @@ ul li a, a:visited {
   text-decoration: none;
 
   color: #ffff;
+}
+
+@media (min-width: 768px) {
+
 }
