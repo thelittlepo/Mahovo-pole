@@ -464,8 +464,6 @@ footer a:hover {
     height: 5vw;
     margin-top: 2.5vw;
 
-    background-color: #000000;
-
     justify-content: center;
     align-items: center;
   }
@@ -543,8 +541,6 @@ footer a:hover {
 
     text-align: center;
 
-    color: #ffff;
-
     font-family: 'Rubik-Medium';
     font-size: 1rem;
     line-height: 1.1;
@@ -554,8 +550,6 @@ footer a:hover {
     width: 42vw;
 
     text-align: center;
-
-    color: #ffff;
 
     font-family: 'Rubik-Light';
     font-size: 0.7rem;
@@ -568,15 +562,12 @@ footer a:hover {
     padding: 1.5vw 5vw;
 
     border-radius: 1.5625vw;
-    background-color: #069E79;
   }
 
   .tickets-button a, a:visited {
     margin-left: -0.5vw;
 
     text-decoration: none;
-
-    color: #ffff;
 
     font-family: 'Rubik-Medium';
     font-size: 1rem;
@@ -619,16 +610,12 @@ footer a:hover {
 
     text-align: center;
 
-    color: #ffff;
-
     font-family: 'Rubik-Light';
     font-size: 1.5rem;
   }
 
   .about__element h2 {
-    margin-top: 10.9375vw;
-
-    color: #00FFC2;
+    margin-top: 7.9375vw;
 
     font-family: 'Rubik-Medium';
     font-size: 5.35rem;
@@ -639,8 +626,6 @@ footer a:hover {
 
     text-align: center;
 
-    color: #ffff;
-
     font-family: 'Rubik-Medium';
     font-size: 1.7rem;
   }
@@ -650,10 +635,8 @@ footer a:hover {
 
     text-align: center;
 
-    color: #ffff;
-
     font-family: 'Rubik-Light';
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.2;
   }
 }
@@ -667,8 +650,6 @@ footer a:hover {
     height: 5vw;
     margin-top: 2.5vw;
 
-    background-color: #000000;
-
     justify-content: center;
     align-items: center;
   }
@@ -680,11 +661,11 @@ footer a:hover {
     grid-template-columns: 20fr 20fr 20fr;
     grid-template-rows:  40fr 40fr ;
     grid-row-gap: 5.1875vw;
-    grid-column-gap: 1vw;
+    grid-column-gap: 5vw;
   }
 
   p.date {
-    padding-top: 5.6vw;
+    padding-top: 5.3vw;
 
     font-size: 0.66rem;
   }
@@ -710,8 +691,6 @@ footer a:hover {
   .ticket {
     display: flex;
     flex-direction: column;
-
-    margin-top: 1vw;
 
     justify-content: center;
     align-items: center;
@@ -800,7 +779,7 @@ footer a:hover {
   }
 
   .about h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .about h2 {
@@ -808,7 +787,7 @@ footer a:hover {
 
     text-align: center;
 
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 
   .about__element h2 {
@@ -826,6 +805,7 @@ footer a:hover {
   }
 
   .about__element p {
+    width: 55vw;
     margin-top: 3.75vw;
 
     text-align: center;
