@@ -84,7 +84,7 @@ nav {
   animation: spin 10s linear 0s infinite normal;
 }
 
-.main-picture img:hover {
+.main-picture:hover {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   -ms-animation-play-state: running;
