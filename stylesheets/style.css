@@ -33,7 +33,7 @@ nav {
   text-transform: uppercase;
 
   font-family: 'Rubik-medium';
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   justify-content: center;
   align-items: center;
@@ -77,11 +77,11 @@ nav {
   margin-right: 16.875vw;
   margin-left: 16.875vw;
 
-  -webkit-animation: spin 6s linear 0s infinite normal;
-  -moz-animation: spin 6s linear 0s infinite normal;
-  -ms-animation: spin 6s linear 0s infinite normal;
-  -o-animation: spin 6s linear 0s infinite normal;
-  animation: spin 6s linear 0s infinite normal;
+  -webkit-animation: spin 10s linear 0s infinite normal;
+  -moz-animation: spin 10s linear 0s infinite normal;
+  -ms-animation: spin 10s linear 0s infinite normal;
+  -o-animation: spin 10s linear 0s infinite normal;
+  animation: spin 10s linear 0s infinite normal;
 }
 
 .main-picture img:hover {
@@ -116,12 +116,13 @@ nav {
 .dates {
   display: grid;
 
-  margin: 7.5vw 9.5vw 0;
+  margin: 7.5vw 8.5vw 0;
+  padding-left: 3vw;
 
   grid-template-columns: 37fr 37fr;
   grid-template-rows:  20fr 20fr 20fr;
   grid-row-gap: 7.1875vw;
-  grid-column-gap: 6vw;
+  grid-column-gap: 9vw;
 }
 
 .griditem{
@@ -134,7 +135,7 @@ nav {
 .parttwo {
   display: flex;
 
-  margin-top: 0.3vw;
+  margin-top: 0.37vw;
   margin-left: 2.2vw;
 
   flex-wrap: wrap;
@@ -171,7 +172,7 @@ p.date {
   color: #ffff;
 
   font-family: 'Rubik-Light';
-  font-size: 0.66rem;
+  font-size: 1rem;
 }
 
 .address {
@@ -233,7 +234,7 @@ p.date {
 }
 
 .tickets-button {
-  margin-top: -42vw;
+  margin-top: -41vw;
   margin-left: 58vw;
   padding: 2vw 6vw;
 
@@ -257,6 +258,8 @@ p.date {
 }
 
 .tickets-addition p {
+  padding-top: 1.5vw;
+
   color: #E5E5E5;
 
   font-family: 'Rubik-Light';
@@ -330,7 +333,7 @@ footer{
   margin-top: 8.125vw;
   margin-bottom: 5vw;
 
-  color: #000000;
+  background-color: #000000;
 
   justify-content: center;
   align-items: center;
@@ -342,7 +345,7 @@ ul{
   text-transform: uppercase;
 
   font-family: 'Rubik-medium';
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   justify-content: center;
   align-items: center;
@@ -356,14 +359,23 @@ footer ul li a, a:visited {
   color: #ffff;
 }
 
+footer a:hover {
+  text-decoration: none;
+
+  color: #069E79;
+}
+
 @media (min-width: 768px) {
-  .menu  {
-    font-size: 1.1rem;
+  .menu a, footer a {
+    font-size: 0.6rem;
+  }
+
+  nav {
+    height: 5vw;
+    margin-top: 2.5vw;
   }
 
   .dates {
-    display: grid;
-
     margin: 7.5vw 9.5vw 0;
 
     grid-template-columns: 37fr 37fr;
@@ -371,30 +383,454 @@ footer ul li a, a:visited {
     grid-row-gap: 7.1875vw;
     grid-column-gap: 6.5vw;
   }
+
+  .ticket {
+    padding: 1vw 4vw;
+  }
+
+  .ticket h3 {
+    width: 41vw;
+
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+
+  .ticket p {
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+
+  .info {
+    margin-bottom: 0vw;
+  }
+
+  .tickets-button {
+    margin-top: -22vw;
+    margin-left: 50vw;
+    padding: 2vw 5vw;
+  }
+
+  .tickets-button a, a:visited {
+    margin-left: -0.5vw;
+
+    text-decoration: none;
+
+    font-size: 1.2rem;
+  }
+
+  .tickets-addition {
+    padding-top: 1.5125vw;
+    padding-left: 4vw;
+  }
+
+  .tickets-addition p {
+    padding-top: 1.1vw;
+
+    font-size: 0.5rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about__element h2 {
+    font-size: 5.35rem;
+  }
+
+  .about__element h3 {
+    font-size: 1.7rem;
+  }
+
+  .about__element p {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: 5vw;
+    margin-bottom: 2.5vw;
+  }
 }
 
 @media (min-width: 1024px) {
-  .dates {
-    display: grid;
+  .menu a, footer a {
+    font-size: 0.5rem;
+  }
 
-    margin: 7.5vw 0 0;
+  nav, footer {
+    height: 5vw;
+    margin-top: 2.5vw;
+
+    background-color: #000000;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dates {
+    margin: 7.5vw 1vw 0;
+    padding-left: 3vw;
 
     grid-template-columns: 20fr 20fr 20fr;
     grid-template-rows:  40fr 40fr ;
     grid-row-gap: 5.1875vw;
-    grid-column-gap: 6.5vw;
+    grid-column-gap: 1vw;
   }
 
   p.date {
     padding-top: 5.6vw;
+
+    font-size: 0.66rem;
   }
 
   .parttwo {
-    display: flex;
-
     margin-top: 0.65vw;
     margin-left: 2.2vw;
+  }
 
-    flex-wrap: wrap;
+  .address a, a:hover {
+    font-size: 0.7rem;
+  }
+
+  .tickets {
+    display: grid;
+
+    margin-top: 0vw;
+    padding: 0;
+
+    grid-template-columns: 30fr 30fr;
+    grid-template-rows: 30fr 30fr;
+  }
+
+  .ticket {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 15vw;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  #first {
+    order: 3;
+  }
+
+  #second {
+    order: 1;
+  }
+
+  #third {
+    order: 2;
+  }
+
+  #fourth {
+    order: 4;
+  }
+
+  .info {
+    margin-top: 3.4vw;
+    margin-bottom: 10vw;
+
+    text-align: center;
+  }
+
+  .ticket h3 {
+    width: 32vw;
+
+    text-align: center;
+
+    color: #ffff;
+
+    font-family: 'Rubik-Medium';
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+
+  .ticket p {
+    width: 42vw;
+
+    text-align: center;
+
+    color: #ffff;
+
+    font-family: 'Rubik-Light';
+    font-size: 0.7rem;
+    line-height: 1.25;
+  }
+
+  .tickets-button {
+    margin-top: -4.4vw;
+    margin-left: 0vw;
+    padding: 1.5vw 5vw;
+
+    border-radius: 1.5625vw;
+    background-color: #069E79;
+  }
+
+  .tickets-button a, a:visited {
+    margin-left: -0.5vw;
+
+    text-decoration: none;
+
+    color: #ffff;
+
+    font-family: 'Rubik-Medium';
+    font-size: 1rem;
+  }
+
+  .tickets-addition {
+    padding-top: 7.5125vw;
+
+    order: 5;
+  }
+
+  .tickets-addition p {
+    margin-right: -50vw;
+    padding-top: 1vw;
+
+    text-align: center;
+
+    font-size: 0.5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    margin: 12.5vw 8.5vw 0;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about h1 {
+    color: #ffff;
+
+    font-family: 'Rubik-Medium';
+    font-size: 2rem;
+  }
+
+  .about h2 {
+    margin-top: 2.125vw;
+
+    text-align: center;
+
+    color: #ffff;
+
+    font-family: 'Rubik-Light';
+    font-size: 1.5rem;
+  }
+
+  .about__element h2 {
+    margin-top: 10.9375vw;
+
+    color: #00FFC2;
+
+    font-family: 'Rubik-Medium';
+    font-size: 5.35rem;
+  }
+
+  .about__element h3 {
+    margin-top: 5.625vw;
+
+    text-align: center;
+
+    color: #ffff;
+
+    font-family: 'Rubik-Medium';
+    font-size: 1.7rem;
+  }
+
+  .about__element p {
+    margin-top: 3.75vw;
+
+    text-align: center;
+
+    color: #ffff;
+
+    font-family: 'Rubik-Light';
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu a, footer a {
+    font-size: 0.5rem;
+  }
+
+  nav, footer {
+    height: 5vw;
+    margin-top: 2.5vw;
+
+    background-color: #000000;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dates {
+    margin: 7.5vw 1vw 0;
+    padding-left: 3vw;
+
+    grid-template-columns: 20fr 20fr 20fr;
+    grid-template-rows:  40fr 40fr ;
+    grid-row-gap: 5.1875vw;
+    grid-column-gap: 1vw;
+  }
+
+  p.date {
+    padding-top: 5.6vw;
+
+    font-size: 0.66rem;
+  }
+
+  .parttwo {
+    margin-top: 0.65vw;
+    margin-left: 2.2vw;
+  }
+
+  .address a, a:hover {
+    font-size: 0.7rem;
+  }
+
+  .tickets {
+    display: grid;
+
+    padding-top: 0.2vw;
+
+    grid-template-columns: 30fr 30fr;
+    grid-template-rows: 30fr 30fr;
+  }
+
+  .ticket {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1vw;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  #first {
+    order: 3;
+  }
+
+  #second {
+    order: 1;
+  }
+
+  #third {
+    order: 2;
+  }
+
+  #fourth {
+    order: 4;
+  }
+
+  .info {
+    margin-top: 3.4vw;
+    margin-bottom: 10vw;
+
+    text-align: center;
+  }
+
+  .ticket h3 {
+    width: 32vw;
+
+    text-align: center;
+
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+
+  .ticket p {
+    width: 42vw;
+
+    text-align: center;
+
+    font-size: 0.7rem;
+    line-height: 1.25;
+  }
+
+  .tickets-button {
+    margin-top: -4.4vw;
+    margin-left: 0vw;
+    padding: 1.5vw 5vw;
+
+    border-radius: 1.5625vw;
+  }
+
+  .tickets-button a, a:visited {
+    margin-left: -0.5vw;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+  }
+
+  .tickets-addition {
+    padding-top: 7.5125vw;
+
+    order: 5;
+  }
+
+  .tickets-addition p {
+    margin-right: -50vw;
+    padding-top: 1vw;
+
+    text-align: center;
+
+    font-size: 0.5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    margin: 12.5vw 8.5vw 0;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about h1 {
+    font-size: 1.8rem;
+  }
+
+  .about h2 {
+    margin-top: 2.125vw;
+
+    text-align: center;
+
+    font-size: 1.4rem;
+  }
+
+  .about__element h2 {
+    margin-top: 10.9375vw;
+
+    font-size: 5.35rem;
+  }
+
+  .about__element h3 {
+    margin-top: 5.625vw;
+
+    text-align: center;
+
+    font-size: 1.2rem;
+  }
+
+  .about__element p {
+    margin-top: 3.75vw;
+
+    text-align: center;
+
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
 }
